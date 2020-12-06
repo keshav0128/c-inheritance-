@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class family{
+    public:
+    family(){
+        cout<<"this is family"<<endl;
+    }
+};
+class home{
+    public:
+    home(){
+        cout<<"family starts with home"<<endl;
+    }
+};
+class neutral:public family,public home{
+    public:
+    neutral(){
+        cout<<"this is neutral family"<<endl;
+    }
+    
+};
+
+int main() {
+    neutral n1;
+	
+	return 0;
+}

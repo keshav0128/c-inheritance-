@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class family{
+    public:
+    family(){
+        cout<<"this is a family"<<endl;
+    }
+};
+class home: public family{
+    public:
+    home(){
+        cout<<"family starts with home"<<endl;
+    }
+};
+class joint: public home{
+    public:
+    joint(){
+        cout<<"this is joint family"<<endl;
+    }
+};
+
+int main() {
+    joint j1;
+    home h1;
+
+	return 0;
+}
